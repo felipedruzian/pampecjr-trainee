@@ -99,3 +99,7 @@ body {
     left: 280px;
     top: 457px;
 }
+
+#main > a > button:hover {
+    background: var(--black);
+}
