@@ -1,0 +1,183 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+    --light-grey: #dce4e3;
+    --text-color: #084236;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.sidebar {
+    height: 100%;
+    width: 78px; /* change with js */
+    position: fixed;
+    z-index: 1; /* mantém no topo */
+    top: 0;
+    left: 0;
+    background-color: var(--green);
+    overflow-x: hidden; /* desabilita scroll*/
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    
+}
+
+.sidebar a {
+    margin: 4px 14px;
+    display: flex;
+    transition: 0.3s;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.sidebar a img {
+    padding: 13px;
+    width: 24px;
+    height: 24px;
+}
+
+.sidebar a:hover {
+    background-color: var(--body-bg-color);
+    transition: .3s;
+}
+
+
+
+.textbar {
+    margin-left: 0px;
+    color: var(--green);
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.itembar {
+    width: 50px;
+    height: 50px;
+    transition: .3s;
+}
+
+.itembar:hover {
+    background-color: var(--body-bg-color);
+    transition: .3s;
+}
+
+#searchbtn {
+    background-color: var(--light-green);
+}
+
+#searchbar {
+    background-color: var(--light-green);
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    display: none;
+    color: black;
+    transition: 0.3s;
+}
+
+#logoimg {
+    width: 64px;
+    height: 25px;
+    display: none;
+}
+
+#menubtn {
+    width: 50px;
+    height: 60px;
+    margin-top: 8px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#menubtn img {
+    padding: 18px 13px;
+}
+
+#menubtn:hover {
+    background-color: var(--green);
+}
+
+#logout {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    margin: 0px;
+    border-radius: 0;
+    background-color: var(--light-green);
+}
+
+#logoutbtn {
+    position: absolute;
+    left: 14px;
+    top: 5px;
+    transition: 0.3s;
+}
+
+#logoutimg {
+    display: none;
+    grid-template-areas: 
+    "photo name"
+    "photo occup";
+}
+
+#logoutimg img {
+    grid-area: photo;
+    margin: 0px;
+    padding: 0px;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    position: absolute;
+    top: 8px;
+    left: 14px;
+}
+
+#logoutimg h3 {
+    grid-area: name;
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 500;
+    color: var(--text-color);
+    position: absolute;
+    top: 12px;
+    left: 70px;
+}
+
+#logoutimg p {
+    grid-area: occup;
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    color: var(--text-color);
+    position: absolute;
+    top: 28px;
+    left: 70px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+    margin-left: 78px; /* change with js */
+}

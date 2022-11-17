@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sidebar</title>
+</head>
+<body>
+    <nav id="mySidebar" class="sidebar">
+        <a href="#" id="menubtn"><img src="images/logo.svg" id="logoimg"><img src="images/menu.svg" onclick="switchNav()"></a>
+        <a href="#" id="searchbtn"><img src="images/search.svg"><input type="search" placeholder="Buscar" id="searchbar"></a>
+        <a href="#" class="itembar"><img src="images/grid.svg"><p class="textbar">Dashboard</p></a>
+        <a href="#" class="itembar"><img src="images/pet.svg"><p class="textbar">Pets</p></a>
+        <a href="#" class="itembar"><img src="images/user.svg"><p class="textbar">Clientes</p></a>
+        <a href="#" class="itembar"><img src="images/vet.svg"><p class="textbar">Vets</p></a>
+        <a href="#"  class="itembar"><img src="images/settings.svg"><p class="textbar">Ajustes</p></a>
+        <a id="logout" href="#">
+            <img id="logoutbtn" src="images/log-out.svg">
+            <div id="logoutimg">
+                <img src="images/photo.jpg">
+                <h3>Fulano da Silva</h3>
+                <p>Veterinário</p>
+            </div>
+        </a>
+    </nav>
+
+    <div id="main">
+        <h2>Sidebar</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus modi, excepturi culpa magni dolor ratione molestias pariatur officiis omnis nulla sequi odio? Rerum quasi placeat perspiciatis quibusdam. Consequatur, rem nemo!</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
