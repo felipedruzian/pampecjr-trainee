@@ -9,24 +9,26 @@
 </head>
 <body>
     <p id="share">Compartilhe seu #rocketcard</p>
-    <p id="custom">Customizar Rocketcard</p>
     <div id="fundo">
         <div id="card">
             <header>
-                <div><img src="assets/logo.svg" alt="rocketseat logo"></div><p>birobirobiro</p>
+                <div>
+                    <img src="assets/logo.svg" alt="rocketseat logo">
+                </div>
+                <p id="userName">birobirobiro</p>
             </header>
             <div id="frame">
                 <div id="elipse">
-                    <img src="#" alt="foto de perfil">
+                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="foto de perfil" id="profileImage">
                 </div>
             </div>
             <div id="info">
                 <ul>
-                    <li><img src="assets/followers.svg" alt="seguidores"><p id="followers"></p>Seguidores</li>
-                    <li><img src="assets/following.svg" alt="seguindo"><p id="following"></p>Seguindo</li>
-                    <li><img src="assets/repository.svg" alt="repositórios"><p id="repositories"></p>Repositórios</li>
-                    <li><img src="assets/company.svg" alt="empresa"><p id="company"></p>@Rocketseat</li>
-                    <li><img src="assets/location.svg" alt="localização"><p id="location"></p>Bebedouro</li>
+                    <li><img src="assets/followers.svg" alt="seguidores"><p id="followers">Seguidores</p></li>
+                    <li><img src="assets/following.svg" alt="seguindo"><p id="following">Seguindo</p></li>
+                    <li><img src="assets/repository.svg" alt="repositórios"><p id="repositories">Repositórios</p></li>
+                    <li><img src="assets/company.svg" alt="empresa"><p id="company">@Rocketseat</p></li>
+                    <li><img src="assets/location.svg" alt="localização"><p id="location">Bebedouro</p></li>
                 </ul>
             </div>
             <footer>
@@ -35,7 +37,11 @@
             </footer>
         </div>
     </div>
-    <button id="botao" onclick="mudarFundo()"><p>Gerar background</p></button>
+    <div id="edit">
+        <p>Digite seu usuário do GitHub</p>
+        <input type="text" id="user">
+        <button id="botao" onclick="mudarFundo()"><p>Gerar card</p></button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

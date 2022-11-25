@@ -118,6 +118,10 @@ body {
     align-items: center;
 }
 
+#info ul li p {
+    margin: 0px;
+}
+
 #info ul li img {
     width: 20px;
     height: 20px;
@@ -139,18 +143,40 @@ body {
 }
 
 /* botao */
-#custom {
+
+#edit {
     position: absolute;
-    width: 225px;
+    width: 380px;
+    top: 220px;
+    left: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#user {
+    margin-bottom: 20px;
+    width: 200px;
     height: 18px;
-    left: 954px;
-    top: 373px;
+    border: none;
+    border-radius: 5px;
 }
 
 #botao {
-    position: absolute;
     width: 229px;
     height: 59.47px;
-    left: 950px;
-    top: 424px;
+    border: none;
+    border-radius: 15px;
+    color: var(--text);
+    background-color: #000000;
+}
+
+#botao:hover {
+    cursor: pointer;
+}
+
+#botao:active {
+    position: relative;
+    top: 2px;
 }
